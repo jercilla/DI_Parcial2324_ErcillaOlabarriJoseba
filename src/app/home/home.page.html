@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      TRIVIA
-    </ion-title>
+    <ion-title> TRIVIA </ion-title>
     <!-- Añadir ion-segment-->
   </ion-toolbar>
 </ion-header>
@@ -11,5 +9,9 @@
   <!-- Gestionar el control para mostrar un componente u otro. 
     -- Utilizaremos un ion-card por cada componente.
     -->
+  <app-introduccion
+    [titulo]="titulo"
+    [descripcion]="descripcion"
+    [url]="imagenUrl"
+  ></app-introduccion>
 </ion-content>
-
